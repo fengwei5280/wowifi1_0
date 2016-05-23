@@ -1,0 +1,41 @@
+<ion-view view-title="我的wifi">
+   <ion-content class="padding" auto-play="true" does-continue="true" >
+    <ion-slide-box  on-slide-changed="slideHasChanged($index)" class="slidebox" auto-play="true" slide-interval="1000"delegate-handle="slideimgs" does-continue="true">
+      <ion-slide ng-repeat= "recommend in recommends"> 
+        <div><img ng-src="{{recommend.img}}" width="100%" height="150px"></div>
+      </ion-slide>
+    </ion-slide-box>
+    
+   <div class="button-bar wboss-button">
+    <a class="button button-outline button-assertive">
+      <span class="ion-videocamera" style="font-size:30px"></span><br/>
+      看电影</a>
+    <a class="button button-outline button-assertive  button-calm">
+      <span class="ion-cash" style="font-size:30px"></span><br/>
+      充值  </a>
+    <a class="button button-outline button-assertive  button-calm">
+      <span class="ion-social-yen" style="font-size:30px"></span><br/>
+      钱多多</a>
+    <a class="button button-outline button-assertive  button-calm">
+      <span class="ion-android-bus" style="font-size:30px"></span><br/>
+      票务巴士</a>
+   </div>
+   <div class="button-bar wboss-button">
+    <a class="button button-outline button-assertive">
+      <span class="ion-cube" style="font-size:30px"></span><br/>
+    天天有礼</a>
+    <a class="button button-outline button-assertive ">
+      <span class="ion-laptop" style="font-size:30px"></span><br/>
+    爱图书  </a>
+    <a class="button button-outline button-assertive ">
+      <span class="ion-android-download" style="font-size:30px"></span><br/>
+    应用下载</a>
+    <a class="button button-outline button-assertive ">
+      <span class="ion-upload" style="font-size:30px"></span><br/>
+    赚云豆</a>
+   </div>
+   
+
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+<ion-view view-title="我的wifi">
+   <ion-content auto-play="true" does-continue="true" >
+    <ion-slide-box  on-slide-changed="slideHasChanged($index)" class="slidebox" auto-play="true" slide-interval="1000"delegate-handle="slideimgs" does-continue="true">
+      <ion-slide ng-repeat= "recommend in recommends"> 
+        <div><img ng-src="{{recommend.img}}" width="100%" height="150px"></div>
+      </ion-slide>
+    </ion-slide-box>
+    <ion-toggle class="toggle-red">
+        开启wifi
+    </ion-toggle>
+    <button class="button  button-assertive ion-wifi" style="font-size:20px">
+      一键上网
+      </button>
+  </ion-content>
+</ion-view>
